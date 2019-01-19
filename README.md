@@ -6,5 +6,4 @@ Images:<br><br>
 
  Italic             |  Block letters |
 :-------------------------:|:-------------------------:
-![](https://i.imgur.com/kiCBE2x.png)
-![](https://i.imgur.com/Nm6IJom.png)
+![](https://i.imgur.com/kiCBE2x.png) | ![](https://i.imgur.com/Nm6IJom.png)
