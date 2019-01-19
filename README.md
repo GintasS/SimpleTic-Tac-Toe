@@ -3,6 +3,9 @@ This is a simple tic tac toe with two game modes:<br>Single Player<br> Multi Pla
 <br>
 You can try this game by downloading tic tac toe .zip file from this repo.<br>
 Images:<br><br>
-![alt text](https://i.imgur.com/kiCBE2x.png)
-<br>
-![alt-text](https://i.imgur.com/Nm6IJom.png)
+<table>
+ <tr>
+<td>![alt text](https://i.imgur.com/kiCBE2x.png)</td>
+  </tr>
+<tr>
+  <td>![alt-text](https://i.imgur.com/Nm6IJom.png)</td>
