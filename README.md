@@ -4,6 +4,6 @@ This is a simple tic tac toe with two game modes:<br>Single Player<br> Multi Pla
 You can try this game by downloading tic tac toe .zip file from this repo.<br>
 Images:<br><br>
 
- Italic             |  Block letters |
+             |   |
 :-------------------------:|:-------------------------:
 ![](https://i.imgur.com/kiCBE2x.png) | ![](https://i.imgur.com/Nm6IJom.png)
