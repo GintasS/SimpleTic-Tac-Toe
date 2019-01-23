@@ -10,5 +10,6 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
   <li>Fixed a bug where a player whose going 2nd could've moved before the computer(with a sign 'O') by clicking a tile very fast right after the game was started.</li>
   <li>Fixed a bug where a computer would proceed to take his turn even if the game was won/tied.</li>
   <li>Memory optimization:before this, tic tac toe was taking up to 140-200 MB(!) of memory, now it takes about 25-40 MB!</li>
+  <li>Added game icon.</li>
   <li>Some code optimizations.</li>
 </ul>
