@@ -1,9 +1,76 @@
-﻿namespace TicTacToe
+﻿using System;
+using System.Windows.Forms;
+
+namespace TicTacToe
 {
     // Class, that handles computer moves.
-    public class Computer
-    {
-        protected readonly int FirstCompMove = 4;
+    static class Computer
+    { 
+
+        /// <summary>
+        /// Method, that takes a computer move.
+        /// </summary>
+        public static void MoveManager()
+        {
+            // Re-enable all the buttons and the board box.   
+            Game.BoardBox.Enabled = true;
+            Game.ResetBTN.Enabled = true;
+            Game.Tabs.Enabled = true;
+
+            int turnIndex = -1;
+            int firstIndex = Constants.FirstCompMove;
+
+            // If (1;1) coordinate is available, take it.
+            if (Game.BoardTiles[firstIndex].ReturnTileState())
+                turnIndex = firstIndex;
+            else
+            {
+                // badMove sets if this move is going to
+                // be a random one ar an educated one.
+                bool badMove = ChanceToBadMove();
+
+                if (badMove)
+                    turnIndex = RandomMove();
+                else
+                {
+                    turnIndex = EducatedMove();
+                    turnIndex = turnIndex == -1 ? RandomMove() : turnIndex;
+                }
+            }
+
+            if (turnIndex != -1)
+                Game.TakeMove(turnIndex, Constants.Player1Index);
+        }
+
+        private static bool ChanceToBadMove()
+        {
+            Random rnd = new Random();
+            int move = rnd.Next(0, Constants.ComputerChanceTotal);
+
+            if (move <= Constants.ComputerChanceToBadMove)
+                return true;
+            else
+                return false;
+        }
+
+        /// <summary>
+        /// Method, that generates a random computer move.
+        /// </summary>
+        private static int RandomMove()
+        {
+            // If there are tiles to move on, proceed.
+            bool availableTiles = Game.CheckAllTileState();
+
+            while (availableTiles)
+            {
+                Random rnd = new Random();
+                int move = rnd.Next(0, Constants.TotalTiles);
+
+                if (Game.BoardTiles[move].ReturnTileState())
+                    return move;
+            }
+            return -1;
+        }
 
         /// <summary>
         /// Method, that gets the best move for the computer
@@ -11,7 +78,7 @@
         /// first and he moves on (1;1).
         /// </summary>
         /// <returns>Int.</returns>
-        protected int CheckComputerMoves()
+        private static int EducatedMove()
         {
             /* All moves to choose from.
             3rd column represents the target index, aka the
@@ -54,22 +121,22 @@
                 new int[] { 2, 6, 4 }
             };
 
-            char computerSign = Form1.GameO.Players[0].Sign;
-            char opponentSign = Form1.GameO.Players[1].Sign;
+            char computerSign = Game.Players[0].Sign;
+            char opponentSign = Game.Players[1].Sign;
 
             int?[] possibleMoves = new int?[Constants.CompMovesCount];
 
             // Iterate through the moves.
             for (int y = 0; y < Constants.CompMovesCount; y++)
             {
-                char signBase = Form1.GameO.BoardTiles[allMoves[y][0]].Sign,
-                     sign1 = Form1.GameO.BoardTiles[allMoves[y][1]].Sign,
-                     returnSign = Form1.GameO.BoardTiles[allMoves[y][2]].Sign;
+                char signBase = Game.BoardTiles[allMoves[y][0]].Sign,
+                     sign1 = Game.BoardTiles[allMoves[y][1]].Sign,
+                     returnSign = Game.BoardTiles[allMoves[y][2]].Sign;
 
                 bool condition = (signBase == computerSign || 
                     signBase == opponentSign) ? true : false;
                 bool condition1 = (sign1 == signBase &&
-                    returnSign == Form1.Constant.Signs[2]) ? true : false;
+                    returnSign == Constants.Signs[2]) ? true : false;
 
                 if (condition && condition1)
                 {
@@ -82,7 +149,6 @@
             
             // If computer can complete the set,
             // do it, otherwise block the player.
-
             if (possibleMoves[0].HasValue)
                 return possibleMoves[0].Value;
             else if (possibleMoves[1].HasValue)
@@ -90,8 +156,5 @@
             else
                 return -1;
         }
-
-
-
     }
 }

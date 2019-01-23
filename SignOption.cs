@@ -8,41 +8,14 @@ namespace TicTacToe
     sealed public class SignOption
     {
         // Hold the sign, either an 'O' or an 'X'.
-        private char _sign;
         // PictureBox container, that will hold the image.
-        private PictureBox _container;
+        public char Sign { get; set; }
+        public PictureBox Container { get; set; }
 
-        // Properties.
-        public PictureBox Container
-        {
-            get { return _container; }
-            set { _container = value; }
-        }
-
-        public char Sign
-        {
-            get { return _sign; }
-            set { _sign = value; }
-        }
-        
-        /// <summary>
-        /// Constructor.
-        /// </summary>
-        /// <param name="sign">Default sign.</param>
-        /// <param name="image">Default image.</param>
         public SignOption(char sign, PictureBox image)
         {
-            _sign = sign;
-            _container = image;
-        }
-
-        /// <summary>
-        /// Method, that enables/disables the PictureBox container.
-        /// </summary>
-        /// <param name="state">Bool value to apply for a PictureBox container.</param>
-        public void ChangeOptionState(bool state)
-        {
-            _container.Enabled = state;
+            Sign = sign;
+            Container = image;
         }
 
         /// <summary>
@@ -51,23 +24,20 @@ namespace TicTacToe
         /// <param name="second">Sign option to swap with.</param>
         public void SwapLocation(SignOption second)
         {
-            if (_container.Enabled && second != null)
+            if (Container.Enabled && second != null)
             {
-                char signTemp = _sign;
-                Point temp = _container.Location;
-                PictureBox boxContainer = _container;
+                char signTemp = Sign;
+                Point coordTemp = Container.Location;
+                PictureBox containerTemp = Container;
 
-                _container.Location = second._container.Location;
-                _sign = second.Sign;
-                _container = second.Container;
-
-                second._container.Location = temp;
+                Container.Location = second.Container.Location;
+                Sign = second.Sign;
+                Container = second.Container;
+                
+                second.Container.Location = coordTemp;
                 second.Sign = signTemp;
-                second.Container = boxContainer;
+                second.Container = containerTemp;
             }
         }
-
-
-
     }
 }

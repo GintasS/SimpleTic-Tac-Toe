@@ -5,85 +5,52 @@ using System.Windows.Forms;
 namespace TicTacToe
 {
     // Class, that adds additional functionality to Event class.
-    public class EventHelper
+    static class EventHelper
     {
-        protected GroupBox _boardBox;
-        protected Label[] GameModeLabels;
-        protected Button _startGameBTN;
-        protected Button _resetBTN;
-        protected TabControl _tabs;
-
-        // Properties.
-        public GroupBox BoardBox
-        {
-            get { return _boardBox; }
-            set { _boardBox = value; }
-        }
-
-        public Button StartGameBTN
-        {
-            get { return _startGameBTN; }
-            set { _startGameBTN = value; }
-        }
-
-        public Button ResetBTN
-        {
-            get { return _resetBTN; }
-            set { _resetBTN = value; }
-        }
-
-        public TabControl Tabs
-        {
-            get { return _tabs; }
-            set { _tabs = value; }
-        }
-
         /// <summary>
         /// Method, that enables/disables sign selectors(PictureBoxes for
         /// selecting a sign).
         /// </summary>
         /// <param name="state">Bool value to apply.</param>
-        public void SetStateForSignSelectors(bool state)
+        public static void SetStateForSignSelectors(bool state)
         {
-            foreach (SignOption item in Form1.GameO.SignOptions)
-                item.ChangeOptionState(state);
+            foreach (SignOption item in Game.SignOptions)
+                item.Container.Enabled = state;
         }
 
         /// <summary>
         /// Method, that swaps labels and resets the game.
         /// </summary>
         /// <param name="colIndex">Game mode index.</param>
-        protected void SwapGameMode(int colIndex)
+        public static void SwapGameMode(int colIndex)
         {
-            for (int i = 0; i < Form1.Constant.TotalOptions; i++)
-                GameModeLabels[i].Text = Form1.Constant.SelectorLabelsText[colIndex][i];
+            for (int i = 0; i < Constants.TotalOptions; i++)
+                Game.GameModeLabels[i].Text = Constants.Players[colIndex][i];
 
-            Form1.GameO.ResetGame();
+            Game.ResetGame();
         }
 
         /// <summary>
         /// Method, that swaps one selector with another.
         /// </summary>
-        protected void SwapSelectors()
-        {          
-            Form1.GameO.SignOptions[0].SwapLocation(Form1.GameO.SignOptions[1]);
-        }
+        public static void SwapSelectors() =>          
+            Game.SignOptions[0].SwapLocation(Game.SignOptions[1]);
 
         /// <summary>
         /// Methot, that initalizes player signs right after user clicked on 'Start' button.
         /// </summary>
-        protected void SetPlayerSigns()
+        public static void SetPlayerSigns()
         {
-            string tabName = Tabs.SelectedTab.Text;
-            for (int i = 0; i < Form1.Constant.TotalPlayers; i++)
+            string tabName = Game.Tabs.SelectedTab.Text;
+            for (int i = 0; i < Constants.TotalPlayers; i++)
             {
-                string playerName = (tabName == Form1.Constant.GameModes[0]) ?
-                    Form1.Constant.PossiblePlayers[0][i] : Form1.Constant.PossiblePlayers[1][i];
+                string playerName = (tabName == Constants.GameModes[0]) ?
+                    Constants.Players[0][i] : Constants.Players[1][i];
 
-                Form1.GameO.Players[i] = new Player(
+                Game.Players[i] = new PlayerClass(
                     playerName,
-                    Form1.GameO.SignOptions[i].Sign,
-                    Form1.GameO.SignOptions[i].Container.Image
+                    Game.SignOptions[i].Sign,
+                    Game.SignOptions[i].Container.Image
                 );
             }
         }
@@ -96,11 +63,10 @@ namespace TicTacToe
         /// </summary>
         /// <param name="millisecond">Time in milliseconds to wait.</param>
         /// <param name="action">Action to complete.</param>
-        public void DelayAction(int millisecond, Action action)
+        public static void DelayAction(int millisecond, Action action)
         {
             var timer = new DispatcherTimer();
             timer.Tick += delegate
-
             {
                 action.Invoke();
                 timer.Stop();
@@ -109,8 +75,5 @@ namespace TicTacToe
             timer.Interval = TimeSpan.FromMilliseconds(millisecond);
             timer.Start();
         }
-
-
-
     }
 }

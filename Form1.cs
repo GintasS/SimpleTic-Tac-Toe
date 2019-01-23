@@ -4,37 +4,16 @@ using System.Windows.Forms;
 namespace TicTacToe
 {
     public partial class Form1 : Form
-    {
-        private static Game _gameObject;
-        private static Validate _validation;
-        private static Constants _constant;
-        private static Singleplayer _singleP;
-        private static Multiplayer _multiP;
-        private static Events _events;
-     
-        public static Game GameO { get => _gameObject; }
-        public static Validate Validation { get => _validation; }
-        public static Constants Constant { get => _constant; }
-        public static Singleplayer SingleP { get => _singleP; } 
-        public static Events AllEvents { get =>_events; }
-        public static Multiplayer MultiP { get => _multiP; }
-
-        /// <summary>
-        /// Constructor.
-        /// </summary>
+    {     
         public Form1()
         {
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Method, that loads the form.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             InitData();
+            InitEventData();
             SetClickEvents();
          }
 
@@ -49,28 +28,29 @@ namespace TicTacToe
                 pictureBox7, pictureBox8, pictureBox9
             };
 
-           _validation = new Validate();
-            _constant = new Constants();
-
-            _gameObject = new Game();
-            _gameObject.SignOptions = new SignOption[] {
-                new SignOption(Constant.Signs[0], pictureBoxSelect1),
-                new SignOption(Constant.Signs[1], pictureBoxSelect2)
+            Game.SignOptions = new SignOption[] 
+            {
+                new SignOption(Constants.Signs[0], pictureBoxSelect1),
+                new SignOption(Constants.Signs[1], pictureBoxSelect2)
             };
 
-            _gameObject.Players = new Player[Constant.TotalPlayers];
+            Game.Players = new PlayerClass[Constants.TotalPlayers];
+            Game.InitBoardTiles(Board);
+        }
 
-            _events = new Events(
-                TileParentBox,
-                new Label[] { Player1Name, Player2Name },
-                new Button[] { StartGameBTN, ResetBTN },
-                tabControl1
-            );
-            
-            _gameObject.InitBoardTiles(Board);
+        /// <summary>
+        /// Method, that initiates event data.
+        /// </summary>
+        private void InitEventData()
+        {
+            Game.BoardBox = TileParentBox;
+            Game.GameModeLabels = new Label[]
+            { Player1Name, Player2Name };
 
-            _singleP = new Singleplayer();
-            _multiP = new Multiplayer();
+            Game.StartGameBTN = StartGameBTN;
+            Game.ResetBTN = ResetBTN;
+            Game.ResetBTN.Enabled = false;
+            Game.Tabs = tabControl1;
         }
 
         /// <summary>
@@ -78,14 +58,11 @@ namespace TicTacToe
         /// </summary>
         private void SetClickEvents()
         {
-            StartGameBTN.Click += _events.StartGameEvent;
-            ResetBTN.Click += _events.ResetGameEvent;
-            pictureBoxSelect1.Click += _events.SelectSign1Event;
-            pictureBoxSelect2.Click += _events.SelectSign2Event;
-            tabControl1.Selected += _events.SwapGameModeEvent;
+            StartGameBTN.Click += EventsClass.StartGameEvent;
+            ResetBTN.Click += EventsClass.ResetGameEvent;
+            pictureBoxSelect1.Click += EventsClass.SelectSignEvent;
+            pictureBoxSelect2.Click += EventsClass.SelectSignEvent;
+            tabControl1.Selected += EventsClass.SwapGameModeEvent;
         }
-
-
-
     }
 }

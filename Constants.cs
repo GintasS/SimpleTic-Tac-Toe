@@ -1,59 +1,54 @@
-﻿namespace TicTacToe
+﻿using System.Drawing;
+
+namespace TicTacToe
 {
     // Class, that defines almost all the constants used for the game.
-    sealed public class Constants
+    static class Constants
     {
-        private readonly string[] _gameModes =
+        // Game modes of the tic tac toe.
+        public static readonly string[] GameModes =
         {
             "Single Player", "Multi Player"
         };
 
-        private readonly char[] _signs =
+        // Possible signs of tic tac toe players.
+        public static readonly char[] Signs =
         {
             'O', 'X', '-'
         };
 
-        private readonly string[][] _possiblePlayers =
+        // Player names on different game modes.
+        public static readonly string[][] Players =
         {
             new string[] { "Computer", "Player" },
             new string[] { "Player 1", "Player 2" }
         };
 
-        private readonly string[] _states =
+        // Game states that we are going to display back
+        // to the user.
+        public static readonly string[] States =
         {
-            "Game Won by ", "A Tie!!!"
+            " won!", "A Tie!"
         };
 
-        private readonly string[][] _selectorLabelsText = {
-            new string[] { "Player 1:", "Player 2:" },
-            new string[] { "Computer:", "Player:" }
-        };
+        // Const values for array initialization.
+        public const int WinMovesCount = 8,
+                         CompMovesCount = 24;
 
-        private const int _totalTiles = 9,
-                          _totalOptions = 2,
-                          _totalPlayers = 2,
-                          _player1Index = 0,
-                          _player2Index = 1,
-                          _tileIndexLower = 0,
-                          _tileIndexUpper = 8,
-                          _sleepAfterCompTurn = 900;
-
-        public const int CompMovesCount = 24,
-                         WinMovesCount = 8;
-
-        public int TotalTiles { get => _totalTiles; }
-        public int TotalOptions { get => _totalOptions; }
-        public int TotalPlayers { get => _totalPlayers; }
-        public int Player1Index { get => _player1Index; }
-        public int Player2Index { get => _player2Index; }
-        public int TileIndexLower { get => _tileIndexLower; }
-        public int TileIndexUpper { get => _tileIndexUpper; }
-        public int SleepAfterTurn { get => _sleepAfterCompTurn; }
-
-        public string[] GameModes { get => _gameModes; }
-        public char[] Signs { get => _signs; }
-        public string[][] PossiblePlayers { get => _possiblePlayers; }
-        public string[] States { get => _states; }
-        public string[][] SelectorLabelsText { get => _selectorLabelsText; }
+        // Properties.
+           // General.
+        public static int TotalTiles { get => 9; }
+        public static int TotalOptions { get => 2; }
+        public static int TotalPlayers { get => 2; }
+        public static int Player1Index { get => 0; }
+        public static int Player2Index { get => 1; }
+        public static int TileIndexLower { get => 0; }
+        public static int TileIndexUpper { get => 8; }
+        public static int SleepAfterTurn { get => 900; }
+        public static Color DefaultColor { get => Color.WhiteSmoke; }
+             // Computer turns.
+        public static int ComputerChanceTotal { get => 100; }
+        public static int ComputerChanceToBadMove { get => 30; }
+        public static int FirstCompMove { get => 4; }
     }   
 }
