@@ -9,5 +9,5 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
   <li>Added a chance of 30% that a computer will choose a random move instead of an educated one(where one blocks other player or completes it's own set).</li>
   <li>Fixed a bug where a player whose going 2nd could've moved before the computer(with a sign 'O') by clicking a tile very fast right after the game was started.</li>
   <li>Fixed a bug where a computer would proceed to take his turn even if the game was won/tied.</li>
-  <li>Some code optimizations.<li>
+  <li>Some code optimizations.</li>
 </ul>
