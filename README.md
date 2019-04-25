@@ -5,7 +5,6 @@
 ## Jump to...
 
   - [Intro](#intro)
-  - [Features](#features)
   - [Media](#media)
   - [Changelog](#changelog)
 
