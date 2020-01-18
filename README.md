@@ -21,28 +21,28 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
 
 ## <a name="Media"></a>Media
 
-<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image1.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image1.JPG" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image1.JPG">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image1.JPG" height="300" style="max-width:100%;"></img>
 </a>
 <blockquote>Default window(1/23/2019)</blockquote>
 <br>
-<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image2.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image2.JPG" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image2.JPG">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image2.JPG" height="300" style="max-width:100%;"></img>
 </a>
 <blockquote>Game(1/23/2019)</blockquote>
 <br>
-<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image3.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image3.JPG" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image3.JPG">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image3.JPG" height="300" style="max-width:100%;"></img>
 </a>
 <blockquote>Won window(1/23/2019)</blockquote>
 <br>
-<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image4.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image4.JPG" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image4.JPG">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image4.JPG" height="300" style="max-width:100%;"></img>
 </a>
 <blockquote>Tie window(1/23/2019)</blockquote>
 <br>
-<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image5.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/Image5.JPG" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image5.JPG">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image5.JPG" height="300" style="max-width:100%;"></img>
 </a>
 <blockquote>Tie window(1/23/2019)</blockquote>
 <br>
