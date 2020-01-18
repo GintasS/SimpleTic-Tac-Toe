@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{3D0C3E9C-1684-4973-A57C-987ACDB2ACCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnCsharp", "..\LearnCsharp\LearnCsharp\LearnCsharp.csproj", "{357870BB-7310-493E-B4DE-805E6664B4B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "..\Calculator\Calculator\Calculator.csproj", "{CC37BB87-D1E2-4A84-A51D-73BB27A48328}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D0C3E9C-1684-4973-A57C-987ACDB2ACCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0C3E9C-1684-4973-A57C-987ACDB2ACCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0C3E9C-1684-4973-A57C-987ACDB2ACCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0C3E9C-1684-4973-A57C-987ACDB2ACCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357870BB-7310-493E-B4DE-805E6664B4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357870BB-7310-493E-B4DE-805E6664B4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357870BB-7310-493E-B4DE-805E6664B4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357870BB-7310-493E-B4DE-805E6664B4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC37BB87-D1E2-4A84-A51D-73BB27A48328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC37BB87-D1E2-4A84-A51D-73BB27A48328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC37BB87-D1E2-4A84-A51D-73BB27A48328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC37BB87-D1E2-4A84-A51D-73BB27A48328}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
