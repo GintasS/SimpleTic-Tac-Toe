@@ -22,47 +22,45 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
 ## <a name="Media"></a>Media
 
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image1.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image1.JPG" height="300" style="max-width:100%;"></img>
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image1.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Default window(1/23/2019)</blockquote>
+<blockquote>Default window(1/18/2020)</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image2.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image2.JPG" height="300" style="max-width:100%;"></img>
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image2.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Game(1/23/2019)</blockquote>
+<blockquote>Game(1/18/2020)</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image3.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image3.JPG" height="300" style="max-width:100%;"></img>
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image3.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Won window(1/23/2019)</blockquote>
+<blockquote>Won window(1/18/2020)</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image4.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image4.JPG" height="300" style="max-width:100%;"></img>
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image4.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Tie window(1/23/2019)</blockquote>
+<blockquote>Tie window(1/18/2020)</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image5.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image5.JPG" height="300" style="max-width:100%;"></img>
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image5.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Tie window(1/23/2019)</blockquote>
+<blockquote>Tie window(1/18/2020)</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image6.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image6.JPG" height="300" style="max-width:100%;"></img>
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image6.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Tie window(1/23/2019)</blockquote>
+<blockquote>Tie window(1/18/2020)</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image7.JPG">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image7.JPG" height="300" style="max-width:100%;"></img>
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image7.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Tie window(1/23/2019)</blockquote>
+<blockquote>Tie window(1/18/2020)</blockquote>
 
 <br>
-<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/6Sg5qXTBTt.gif">
-  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/6Sg5qXTBTt.gif" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/j4Q3multVb.gif">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/j4Q3multVb.gif" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Presentation(4/25/2019)</blockquote>
-
-
+<blockquote>Presentation(1/18/2020)</blockquote>
 
 
 ## <a name="Changelog"></a>Changelog
@@ -75,4 +73,11 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
   <li>Memory optimization:before this, tic tac toe was taking up to 140-200 MB(!) of memory, now it takes about 25-40 MB!</li>
   <li>Added game icon.</li>
   <li>Some code optimizations.</li>
+</ul>
+
+<h3>CHANGELOG 1/18/2020</h3>
+<ul>
+  <li>Code refactoring: improved style, naming and more.</li>
+  <li>Added new images/media.</li>
+  <li>~27% code reduction.</li>
 </ul>
