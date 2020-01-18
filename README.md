@@ -46,10 +46,23 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
 </a>
 <blockquote>Tie window(1/23/2019)</blockquote>
 <br>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image6.JPG">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image6.JPG" height="300" style="max-width:100%;"></img>
+</a>
+<blockquote>Tie window(1/23/2019)</blockquote>
+<br>
+<a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image7.JPG">
+  <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image7.JPG" height="300" style="max-width:100%;"></img>
+</a>
+<blockquote>Tie window(1/23/2019)</blockquote>
+
+<br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/6Sg5qXTBTt.gif">
   <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Images/6Sg5qXTBTt.gif" height="300" style="max-width:100%;"></img>
 </a>
 <blockquote>Presentation(4/25/2019)</blockquote>
+
+
 
 
 ## <a name="Changelog"></a>Changelog
