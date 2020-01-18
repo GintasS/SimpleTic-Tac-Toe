@@ -79,5 +79,6 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
 <ul>
   <li>Code refactoring: improved style, naming and more.</li>
   <li>Added new images/media.</li>
+  <li>Added new .zip file</li>
   <li>~27% code reduction.</li>
 </ul>
