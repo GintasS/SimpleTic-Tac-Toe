@@ -39,7 +39,7 @@ Icon is from: <a href="https://www.onlinewebfonts.com/icon/555366" target='_blan
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image4.JPG">
   <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image4.JPG" height="250" style="max-width:100%;"></img>
 </a>
-<blockquote>Tie window(1/18/2020)</blockquote>
+<blockquote>Game window(1/18/2020)</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image5.JPG">
   <img src="https://github.com/GintasS/SimpleTic-Tac-Toe/blob/master/Media/Image5.JPG" height="250" style="max-width:100%;"></img>
